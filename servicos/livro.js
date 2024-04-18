@@ -1,5 +1,6 @@
 const { Console } = require("console")
 const fs = require("fs")
+const { removeListener } = require("process")
 
 function getTodosLivros() {
 
@@ -27,7 +28,7 @@ function modificaLivro(modificacoes, id) {
     let livrosAtuais = JSON.parse(fs.readFileSync("livros.json"))
 
     const indiceModificado = livrosAtuais.findIndex(livro => livro.id === id)
-    
+
 
     const conteudoMudado = { ...livrosAtuais[indiceModificado], ...modificacoes }
 
@@ -37,11 +38,21 @@ function modificaLivro(modificacoes, id) {
     fs.writeFileSync("livros.json", JSON.stringify(livrosAtuais))
 
 }
+function removerLivroPorId(id) {
+   
+    const livros = JSON.parse(fs.readFileSync("livros.json"))
+
+    const livroFiltrado = livros.filter(livro => livro.id !== id)
+
+     fs.writeFileSync("livros.json", JSON.stringify(livroFiltrado))
+ 
+}
 
 
 module.exports = {
     getTodosLivros,
     getLivroPorId,
     insereLivro,
-    modificaLivro
+    modificaLivro,
+    removerLivroPorId
 }
