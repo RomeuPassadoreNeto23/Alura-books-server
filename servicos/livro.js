@@ -1,6 +1,4 @@
-const { Console } = require("console")
 const fs = require("fs")
-const { removeListener } = require("process")
 
 function getTodosLivros() {
 
