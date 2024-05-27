@@ -12,7 +12,7 @@ function getLivros(req, res) {
     }
 
 }
-function getLivro(req, res) {
+function getLivroPorid(req, res) {
     try {
         const id = req.params.id
         if (id && Number(id)) {
