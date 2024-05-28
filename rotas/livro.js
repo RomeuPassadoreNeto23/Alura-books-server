@@ -1,12 +1,12 @@
 const { Router } = require("express")
-const {getLivros , postLivro, patchLivro, deleteLivro} = require('../controladores/livro')
-const { getLivroPorId } = require("../servicos/livro")
+const {getLivros , postLivro, patchLivro, deleteLivro, getLivroPorid } = require('../controladores/livro')
+
 
 const router = Router()
 
 router.get('/', getLivros)
 
-router.get('/:id', getLivroPorId)
+router.get('/:id', getLivroPorid)
 
 router.post('/', postLivro)
 

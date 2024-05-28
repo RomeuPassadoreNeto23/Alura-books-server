@@ -116,7 +116,7 @@ function deleteLivro(req, res) {
 
 module.exports = {
     getLivros,
-    getLivro,
+    getLivroPorid,
     postLivro,
     patchLivro,
     deleteLivro
