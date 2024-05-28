@@ -39,10 +39,19 @@ function postLivro(req, res) {
 
         if (req.body.id) {
             if (req.body.nome) {
+                if (req.body.img) {
 
-                insereLivro(livroNovo)
-                res.status(201)
-                res.send("Livro inserido com sucesso")
+                    insereLivro(livroNovo)
+                    res.status(201)
+                    res.send("Livro inserido com sucesso")
+
+                } else {
+
+                    res.status(422)
+                    res.send("O campo img é obrigatório")
+
+                }
+
 
 
             } else {

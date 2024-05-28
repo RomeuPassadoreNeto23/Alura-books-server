@@ -1,34 +1,47 @@
 [
     {
         "id": "4",
-        "nome": "Entendendo algoritmos"
+        "nome": "Entendendo algoritmos",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
     },
     {
         "id": "5",
-        "nome": "Cangaceiro Javascript"
+        "nome": "Cangaceiro Javascript",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
     },
     {
         "id": "7",
-        "nome": "Guia básico de C#"
+        "nome": "Guia básico de C#",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
     },
     {
         "id": "8",
-        "nome": "Guia básico de JavaScript"
+        "nome": "Guia básico de JavaScript",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
     },
     {
         "id": "9",
-        "nome": "Código Limpo"
+        "nome": "Código Limpo",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
     },
     {
         "id": "10",
-        "nome": "JavaScript para iniciantes"
+        "nome": "JavaScript para iniciantes",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
     },
     {
         "id": "11",
-        "nome": "Conhecendo o python"
+        "nome": "Conhecendo o python",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
     },
     {
         "id": "12",
-        "nome": "Imersão Alura"
+        "nome": "Imersão Alura",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ozl_mupyxyPh2Qzl4XiOFtw2oNtzdN7GjA&s"
+    },
+    {
+        "id": "13",
+        "nome": "Guia básico de JavaScript 2",
+        "img": "https://blog.marcusoliveiradev.com.br/wp-content/uploads/2024/03/Use-a-cabeca-JavaScript-1024x538.png"
     }
 ]
