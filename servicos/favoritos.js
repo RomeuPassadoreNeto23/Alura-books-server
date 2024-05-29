@@ -6,7 +6,7 @@ function getTodosFavoritos() {
 
 }
 
-function deletarFavoritosPorId(id) {
+function deleteFavoritosPorId(id) {
 
     const livros = JSON.parse(fs.readFileSync("favoritos.json"))
 
@@ -18,7 +18,7 @@ function deletarFavoritosPorId(id) {
 
 }
 
- function insereFavoritos(id) {
+ function inseretFavoritos(id) {
 
     const livros = JSON.parse(fs.readFileSync("livros.json"))
 
@@ -28,12 +28,12 @@ function deletarFavoritosPorId(id) {
 
     const novalistaDeLivrosFavoritos = [...favoritos,livroInserido]
 
-    fs.writeFileSync( "favoritos.json" ,JSON.stringify(novalistaDeLivro))
+    fs.writeFileSync( "favoritos.json" ,JSON.stringify(novalistaDeLivrosFavoritos ))
 
  }
 
 module.exports ={
     getTodosFavoritos,
-    deletarFavoritosPorId,
-    insereFavoritos
+    deleteFavoritosPorId,
+    inseretFavoritos
 }
