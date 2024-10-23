@@ -1,19 +1,31 @@
-const { Router } = require("express")
-const {getLivros , postLivro, patchLivro, deleteLivro, getLivroPorid } = require('../controladores/livro')
+const { Router } = require("express"); // Importa o construtor de rotas do Express.js
+const {
+  getLivros,
+  postLivro,
+  patchLivro,
+  deleteLivro,
+  getLivroPorid,
+} = require("../controladores/livro"); // Importa as funções do controlador para lidar com cada rota
 
+// Cria uma instância do roteador do Express
+const router = Router();
 
-const router = Router()
+// Define as rotas e associa cada rota a uma função do controlador
 
-router.get('/', getLivros)
+// GET /livros: Obtém todos os livros
+router.get("/", getLivros);
 
-router.get('/:id', getLivroPorid)
+// GET /livros/:id: Obtém um livro específico pelo ID
+router.get("/:id", getLivroPorid);
 
-router.post('/', postLivro)
+// POST /livros: Cria um novo livro
+router.post("/", postLivro);
 
-router.delete('/:id', deleteLivro)
+// DELETE /livros/:id: Deleta um livro específico pelo ID
+router.delete("/:id", deleteLivro);
 
-router.patch('/:id', patchLivro)
+// PATCH /livros/:id: Atualiza parcialmente um livro específico pelo ID
+router.patch("/:id", patchLivro);
 
-
-
-module.exports = router
+// Exporta o roteador para ser utilizado em outros módulos
+module.exports = router;
